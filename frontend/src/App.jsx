@@ -6,6 +6,7 @@ import Home from "./pages/Home";
 import NotFound from "./pages/NotFound";
 import AllNotes from "./pages/AllNotes";
 import Tools from "./pages/Tools";
+import Calendars from "./pages/Calendars";
 import ProtectedRoute from "./components/ProtectedRoute";
 import "./App.css";
 
@@ -50,6 +51,7 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/logout" element={<Logout />} />
         <Route path="/register" element={<RegisterAndLogout />} />
+        <Route path="/calendar" element={<Calendars />} />
         <Route path="*" element={<NotFound />}></Route>
       </Routes>
     </BrowserRouter>

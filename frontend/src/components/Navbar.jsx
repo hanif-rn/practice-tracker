@@ -17,6 +17,9 @@ const Navbar = () => {
   const handleTools = () => {
     navigate("/tools");
   };
+  const handleCalendar = () => {
+    navigate("/calendar");
+  };
 
   return (
     <div className="navbar bg-base-300">
@@ -44,6 +47,9 @@ const Navbar = () => {
           >
             <li>
               <button onClick={handleMain}>New Entry</button>
+            </li>
+            <li>
+              <button onClick={handleCalendar}>Calendar</button>
             </li>
             <li>
               <button onClick={handleAllNotes}>All Sessions</button>
